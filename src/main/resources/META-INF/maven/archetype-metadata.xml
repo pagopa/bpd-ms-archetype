@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor
+        xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
+        name="ms-rule-engine"
+        xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <requiredProperties>
+        <requiredProperty key="msNameCamelCase">
+            <defaultValue>TestService</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="msName">
+            <defaultValue>test-service</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="msNameUpperCase">
+            <defaultValue>TEST_SERVICE</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="msPackageName">
+            <defaultValue>test_service</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+    <fileSets>
+        <fileSet filtered="false" encoding="UTF-8">
+            <directory></directory>
+            <includes>
+                <include>.gitignore</include>
+                <include>.mvn/**</include>
+                <include>mvnw</include>
+                <include>mvnw.cmd</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory></directory>
+            <includes>
+                <include>runSonar.bat</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+    <modules>
+        <module id="ms-app" dir="app" name="ms-app">
+            <modules>
+                <module id="ms-app-boot" dir="boot" name="ms-app-boot">
+                    <fileSets>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/main/java</directory>
+                            <includes>
+                                <include>**/*.java</include>
+                            </includes>
+                        </fileSet>
+                    </fileSets>
+                </module>
+                <module id="ms-app-config" dir="config" name="ms-app-config">
+                    <fileSets>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/main/java</directory>
+                            <includes>
+                                <include>**/*.java</include>
+                            </includes>
+                        </fileSet>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/main/resources</directory>
+                            <includes>
+                                <include>**/*.yml</include>
+                            </includes>
+                        </fileSet>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/test/java</directory>
+                            <includes>
+                                <include>**/*.java</include>
+                            </includes>
+                        </fileSet>
+                    </fileSets>
+                </module>
+            </modules>
+        </module>
+        <module id="ms-model" dir="model" name="ms-model">
+            <fileSets>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/java</directory>
+                    <includes>
+                        <include>**/*.java</include>
+                    </includes>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/test/java</directory>
+                    <includes>
+                        <include>**/*.java</include>
+                    </includes>
+                </fileSet>
+            </fileSets>
+        </module>
+        <module id="ms-core" dir="core" name="ms-core">
+            <modules>
+                <module id="ms-core-api" dir="api" name="ms-core-api">
+                    <fileSets>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/main/java</directory>
+                            <includes>
+                                <include>**/*.java</include>
+                            </includes>
+                        </fileSet>
+                    </fileSets>
+                </module>
+                <module id="ms-core-impl" dir="impl" name="ms-core-impl">
+                    <fileSets>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/main/java</directory>
+                            <includes>
+                                <include>**/*.java</include>
+                            </includes>
+                        </fileSet>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/test/java</directory>
+                            <includes>
+                                <include>**/*.java</include>
+                            </includes>
+                        </fileSet>
+                    </fileSets>
+                </module>
+            </modules>
+        </module>
+        <module id="ms-integrations" dir="integrations" name="ms-integrations">
+            <modules>
+                <module id="ms-integrations-entities" dir="entities" name="ms-integrations-entities">
+                    <modules>
+                        <module id="ms-integrations-entities-postgres" dir="postgres"
+                                name="ms-integrations-entities-postgres">
+                            <modules>
+                                <module id="ms-integrations-entities-postgres-api" dir="api"
+                                        name="ms-integrations-entities-postgres-api">
+                                    <fileSets>
+                                        <fileSet filtered="true" encoding="UTF-8">
+                                            <directory>src/main/java</directory>
+                                            <includes>
+                                                <include>**/*.java</include>
+                                            </includes>
+                                        </fileSet>
+                                    </fileSets>
+                                </module>
+                                <module id="ms-integrations-entities-postgres-impl" dir="impl"
+                                        name="ms-integrations-entities-postgres-impl">
+                                    <fileSets>
+                                        <fileSet filtered="true" encoding="UTF-8">
+                                            <directory>src</directory>
+                                            <includes>
+                                                <include>**</include>
+                                            </includes>
+                                        </fileSet>
+                                    </fileSets>
+                                </module>
+                            </modules>
+                        </module>
+                    </modules>
+                </module>
+                <module id="ms-integrations-rest" dir="rest" name="ms-integrations-rest">
+                    <modules>
+                        <module id="ms-integrations-rest-test" dir="test" name="ms-integrations-rest-test">
+                            <modules>
+                                <module id="ms-integrations-rest-test-api" dir="api"
+                                        name="ms-integrations-rest-test-api">
+                                    <fileSets>
+                                        <fileSet filtered="true" encoding="UTF-8">
+                                            <directory>src/main/java</directory>
+                                            <includes>
+                                                <include>**/*.java</include>
+                                            </includes>
+                                        </fileSet>
+                                    </fileSets>
+                                </module>
+                                <module id="ms-integrations-rest-test-impl" dir="impl"
+                                        name="ms-integrations-rest-test-impl">
+                                    <fileSets>
+                                        <fileSet filtered="true" encoding="UTF-8">
+                                            <directory>src/main/java</directory>
+                                            <includes>
+                                                <include>**/*.java</include>
+                                            </includes>
+                                        </fileSet>
+                                        <fileSet filtered="true" encoding="UTF-8">
+                                            <directory>src/test/java</directory>
+                                            <includes>
+                                                <include>**/*.java</include>
+                                            </includes>
+                                        </fileSet>
+                                        <fileSet filtered="true" encoding="UTF-8">
+                                            <directory>src/main/resources</directory>
+                                            <includes>
+                                                <include>**</include>
+                                            </includes>
+                                        </fileSet>
+                                        <fileSet filtered="true" encoding="UTF-8">
+                                            <directory>src/test/resources</directory>
+                                            <includes>
+                                                <include>**</include>
+                                            </includes>
+                                        </fileSet>
+                                    </fileSets>
+                                </module>
+                            </modules>
+                        </module>
+                    </modules>
+                </module>
+                <module id="ms-integrations-events" dir="events" name="ms-integrations-events">
+                    <modules>
+                        <module id="ms-integrations-events-test-response" dir="test-response"
+                                name="ms-integrations-events-test-response">
+                            <modules>
+                                <module id="ms-integrations-events-test-response-api" dir="api"
+                                        name="ms-integrations-events-test-response-api">
+                                    <fileSets>
+                                        <fileSet filtered="true" encoding="UTF-8">
+                                            <directory>src/main/java</directory>
+                                            <includes>
+                                                <include>**/*.java</include>
+                                            </includes>
+                                        </fileSet>
+                                    </fileSets>
+                                </module>
+                                <module id="ms-integrations-events-test-response-impl" dir="impl"
+                                        name="ms-integrations-events-test-response-impl">
+                                    <fileSets>
+                                        <fileSet filtered="true" encoding="UTF-8">
+                                            <directory>src/main/java</directory>
+                                            <includes>
+                                                <include>**/*.java</include>
+                                            </includes>
+                                        </fileSet>
+                                        <fileSet filtered="true" encoding="UTF-8">
+                                            <directory>src/test/java</directory>
+                                            <includes>
+                                                <include>**/*.java</include>
+                                            </includes>
+                                        </fileSet>
+                                        <fileSet filtered="true" encoding="UTF-8">
+                                            <directory>src/main/resources</directory>
+                                            <includes>
+                                                <include>**</include>
+                                            </includes>
+                                        </fileSet>
+                                    </fileSets>
+                                </module>
+                            </modules>
+                        </module>
+                        <module id="ms-integrations-events-error" dir="error" name="ms-integrations-events-error">
+                            <modules>
+                                <module id="ms-integrations-events-error-api" dir="api"
+                                        name="ms-integrations-events-error-api">
+                                    <fileSets>
+                                        <fileSet filtered="true" encoding="UTF-8">
+                                            <directory>src/main/java</directory>
+                                            <includes>
+                                                <include>**/*.java</include>
+                                            </includes>
+                                        </fileSet>
+                                    </fileSets>
+                                </module>
+                                <module id="ms-integrations-events-error-impl" dir="impl"
+                                        name="ms-integrations-events-error-impl">
+                                    <fileSets>
+                                        <fileSet filtered="true" encoding="UTF-8">
+                                            <directory>src/main/java</directory>
+                                            <includes>
+                                                <include>**/*.java</include>
+                                            </includes>
+                                        </fileSet>
+                                        <fileSet filtered="true" encoding="UTF-8">
+                                            <directory>src/test/java</directory>
+                                            <includes>
+                                                <include>**/*.java</include>
+                                            </includes>
+                                        </fileSet>
+                                        <fileSet filtered="true" encoding="UTF-8">
+                                            <directory>src/main/resources</directory>
+                                            <includes>
+                                                <include>**</include>
+                                            </includes>
+                                        </fileSet>
+                                    </fileSets>
+                                </module>
+                            </modules>
+                        </module>
+                    </modules>
+                </module>
+            </modules>
+        </module>
+        <module id="ms-interfaces" dir="interfaces" name="ms-interfaces">
+            <modules>
+                <module id="ms-web" dir="web" name="ms-web">
+                    <modules>
+                        <module id="ms-web-api" dir="api" name="ms-web-api">
+                            <fileSets>
+                                <fileSet filtered="true" encoding="UTF-8">
+                                    <directory>src/main/java</directory>
+                                    <includes>
+                                        <include>**/*.java</include>
+                                    </includes>
+                                </fileSet>
+                            </fileSets>
+                        </module>
+                        <module id="ms-web-impl" dir="impl" name="ms-web-impl">
+                            <fileSets>
+                                <fileSet filtered="true" encoding="UTF-8">
+                                    <directory>src/main/java</directory>
+                                    <includes>
+                                        <include>**/*.java</include>
+                                    </includes>
+                                </fileSet>
+                                <fileSet filtered="true" encoding="UTF-8">
+                                    <directory>src/test/java</directory>
+                                    <includes>
+                                        <include>**/*.java</include>
+                                    </includes>
+                                </fileSet>
+                            </fileSets>
+                        </module>
+                    </modules>
+                </module>
+                <module id="ms-listener" dir="listener" name="ms-listener">
+                    <fileSets>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/main/java</directory>
+                            <includes>
+                                <include>**/*.java</include>
+                            </includes>
+                        </fileSet>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/main/resources</directory>
+                            <includes>
+                                <include>**</include>
+                            </includes>
+                        </fileSet>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/test/java</directory>
+                            <includes>
+                                <include>**/*.java</include>
+                            </includes>
+                        </fileSet>
+                    </fileSets>
+                </module>
+            </modules>
+        </module>
+    </modules>
+</archetype-descriptor>
