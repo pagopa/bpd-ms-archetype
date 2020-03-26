@@ -1,4 +1,4 @@
-package it.gov.pagopa.bpd.${msPackageName}.model.dto;
+package ${package}.${msPackageName}.model.dto;
 
 import lombok.Data;
 

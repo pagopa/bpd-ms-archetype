@@ -1,6 +1,6 @@
-package it.gov.pagopa.bpd.${msPackageName}.model.resource;
+package ${package}.${msPackageName}.model.resource;
 
-import it.gov.pagopa.bpd.${msPackageName}.model.enums.DummyEnum;
+import ${package}.${msPackageName}.model.enums.DummyEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

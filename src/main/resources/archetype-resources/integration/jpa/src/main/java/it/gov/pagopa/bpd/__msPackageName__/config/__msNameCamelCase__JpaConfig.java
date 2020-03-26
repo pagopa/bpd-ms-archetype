@@ -1,4 +1,4 @@
-package it.gov.pagopa.bpd.${msPackageName}.config;
+package ${package}.${msPackageName}.config;
 
 import eu.sia.meda.connector.jpa.config.JPAConnectorConfig;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;

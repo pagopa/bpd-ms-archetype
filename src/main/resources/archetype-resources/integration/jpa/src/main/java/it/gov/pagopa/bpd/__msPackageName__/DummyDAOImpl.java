@@ -1,6 +1,6 @@
-package it.gov.pagopa.bpd.${msPackageName};
+package ${package}.${msPackageName};
 
-import it.gov.pagopa.bpd.${msPackageName}.model.entity.DummyEntity;
+import ${package}.${msPackageName}.model.entity.DummyEntity;
 import eu.sia.meda.connector.jpa.JPAConnectorImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

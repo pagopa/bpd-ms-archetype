@@ -1,10 +1,10 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package it.gov.pagopa.bpd.${msPackageName}.assembler;
+package ${package}.${msPackageName}.assembler;
 
-import it.gov.pagopa.bpd.${msPackageName}.model.resource.DummyResource;
-import it.gov.pagopa.bpd.${msPackageName}.model.DummyModel;
+import ${package}.${msPackageName}.model.resource.DummyResource;
+import ${package}.${msPackageName}.model.DummyModel;
 import eu.sia.meda.core.assembler.BaseResourceAssemblerSupport;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;

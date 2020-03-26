@@ -1,12 +1,12 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package it.gov.pagopa.bpd.${msPackageName}.controller;
+package ${package}.${msPackageName}.controller;
 
-import it.gov.pagopa.bpd.${msPackageName}.model.resource.DummyResource;
-import it.gov.pagopa.bpd.${msPackageName}.model.dto.DummyDTO;
-import it.gov.pagopa.bpd.${msPackageName}.assembler.DummyResourceAssembler;
-import it.gov.pagopa.bpd.${msPackageName}.command.DummyCommand;
+import ${package}.${msPackageName}.model.resource.DummyResource;
+import ${package}.${msPackageName}.model.dto.DummyDTO;
+import ${package}.${msPackageName}.assembler.DummyResourceAssembler;
+import ${package}.${msPackageName}.command.DummyCommand;
 import eu.sia.meda.core.controller.StatelessController;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.BeanFactory;

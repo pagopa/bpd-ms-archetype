@@ -1,10 +1,10 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package it.gov.pagopa.bpd.${msPackageName};
+package ${package}.${msPackageName};
 
 import eu.sia.meda.event.BaseEventConnector;
-import it.gov.pagopa.bpd.${msPackageName}.model.DummyModel;
+import ${package}.${msPackageName}.model.DummyModel;
 import org.springframework.stereotype.Service;
 
 @Service

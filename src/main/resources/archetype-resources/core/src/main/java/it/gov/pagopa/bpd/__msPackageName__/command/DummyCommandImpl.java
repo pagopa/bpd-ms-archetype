@@ -1,7 +1,7 @@
-package it.gov.pagopa.bpd.${msPackageName}.command;
+package ${package}.${msPackageName}.command;
 
-import it.gov.pagopa.bpd.${msPackageName}.model.DummyModel;
-import it.gov.pagopa.bpd.${msPackageName}.model.enums.DummyEnum;
+import ${package}.${msPackageName}.model.DummyModel;
+import ${package}.${msPackageName}.model.enums.DummyEnum;
 
 import eu.sia.meda.core.command.BaseCommand;
 import lombok.extern.slf4j.Slf4j;

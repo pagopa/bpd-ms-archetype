@@ -1,7 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package it.gov.pagopa.bpd.${msPackageName};
+package ${package}.${msPackageName};
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConf
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication(exclude = {ErrorMvcAutoConfiguration.class, SessionAutoConfiguration.class})
-@ComponentScan(basePackages = {"eu.sia.meda", "it.gov.pagopa.bpd"})
+@ComponentScan(basePackages = {"eu.sia.meda", "${package}"})
 public class Bpd${msNameCamelCase}Application {
 
 	public static void main(String[] args) {

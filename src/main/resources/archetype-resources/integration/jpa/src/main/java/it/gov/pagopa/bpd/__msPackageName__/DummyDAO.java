@@ -1,6 +1,6 @@
-package it.gov.pagopa.bpd.${msPackageName};
+package ${package}.${msPackageName};
 
-import it.gov.pagopa.bpd.${msPackageName}.model.entity.DummyEntity;
+import ${package}.${msPackageName}.model.entity.DummyEntity;
 import eu.sia.meda.connector.jpa.JPAConnector;
 import org.springframework.data.repository.NoRepositoryBean;
 

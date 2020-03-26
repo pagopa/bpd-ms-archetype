@@ -1,4 +1,4 @@
-package it.gov.pagopa.bpd.${msPackageName}.model.entity;
+package ${package}.${msPackageName}.model.entity;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

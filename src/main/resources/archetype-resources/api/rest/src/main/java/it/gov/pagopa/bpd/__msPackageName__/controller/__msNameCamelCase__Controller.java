@@ -1,10 +1,10 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package it.gov.pagopa.bpd.${msPackageName}.controller;
+package ${package}.${msPackageName}.controller;
 
-import it.gov.pagopa.bpd.${msPackageName}.model.resource.DummyResource;
-import it.gov.pagopa.bpd.${msPackageName}.model.dto.DummyDTO;
+import ${package}.${msPackageName}.model.resource.DummyResource;
+import ${package}.${msPackageName}.model.dto.DummyDTO;
 import io.swagger.annotations.Api;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
