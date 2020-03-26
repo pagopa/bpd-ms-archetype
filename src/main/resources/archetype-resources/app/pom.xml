@@ -2,23 +2,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>it.gov.pagopa.bpd.ms</groupId>
+        <groupId>${groupId}</groupId>
         <artifactId>bpd-${msName}</artifactId>
         <version>${version}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bpd-${msName}-app</artifactId>
+    <groupId>${project.parent.groupId}.${msName}</groupId>
+    <artifactId>${project.parent.artifactId}-app</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>it.gov.pagopa.bpd.ms.${msName}.api</groupId>
-            <artifactId>${msName}-api-rest</artifactId>
+            <groupId>${groupId}.${msName}.api</groupId>
+            <artifactId>bpd-${msName}-api-rest</artifactId>
             <version>${symbol_dollar}{bpd.${msName}.version}</version>
             <scope>runtime</scope>
         </dependency>
 <!--        <dependency>-->
-<!--            <groupId>it.gov.pagopa.bpd.ms.${msName}.api</groupId>-->
+<!--            <groupId>${groupId}.${msName}.api</groupId>-->
 <!--            <artifactId>${msName}-api-listener</artifactId>-->
 <!--            <version>${symbol_dollar}{bpd.${msName}.version}</version>-->
 <!--            <scope>runtime</scope>-->

@@ -8,7 +8,7 @@
         <artifactId>bpd-ms-starter-parent</artifactId>
     </parent>
 
-    <groupId>it.gov.pagopa.bpd.ms</groupId>
+    <groupId>${groupId}</groupId>
     <artifactId>bpd-${msName}</artifactId>
     <version>${version}</version>
     <packaging>pom</packaging>
