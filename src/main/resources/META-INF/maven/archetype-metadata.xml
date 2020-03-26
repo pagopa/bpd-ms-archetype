@@ -74,7 +74,7 @@
                 </fileSet>
             </fileSets>
         </module>
-        <module id="ms-integrations" dir="integrations" name="ms-integrations">
+        <module id="ms-integration" dir="integration" name="ms-integration">
             <modules>
                 <module id="ms-integrations-jpa" dir="jpa" name="ms-integrations-jpa">
                     <fileSets>
@@ -86,7 +86,35 @@
                         </fileSet>
                     </fileSets>
                 </module>
-                <module id="ms-integrations-rest" dir="rest" name="ms-integrations-rest">
+<!--                <module id="ms-integrations-rest" dir="rest" name="ms-integrations-rest">-->
+<!--                    <fileSets>-->
+<!--                        <fileSet filtered="true" encoding="UTF-8">-->
+<!--                            <directory>src/main/java</directory>-->
+<!--                            <includes>-->
+<!--                                <include>**/*.java</include>-->
+<!--                            </includes>-->
+<!--                        </fileSet>-->
+<!--                        <fileSet filtered="true" encoding="UTF-8">-->
+<!--                            <directory>src/test/java</directory>-->
+<!--                            <includes>-->
+<!--                                <include>**/*.java</include>-->
+<!--                            </includes>-->
+<!--                        </fileSet>-->
+<!--                        <fileSet filtered="true" encoding="UTF-8">-->
+<!--                            <directory>src/main/resources</directory>-->
+<!--                            <includes>-->
+<!--                                <include>**</include>-->
+<!--                            </includes>-->
+<!--                        </fileSet>-->
+<!--                        <fileSet filtered="true" encoding="UTF-8">-->
+<!--                            <directory>src/test/resources</directory>-->
+<!--                            <includes>-->
+<!--                                <include>**</include>-->
+<!--                            </includes>-->
+<!--                        </fileSet>-->
+<!--                    </fileSets>-->
+<!--                </module>-->
+                <module id="ms-integration-event" dir="event" name="ms-integration-event">
                     <fileSets>
                         <fileSet filtered="true" encoding="UTF-8">
                             <directory>src/main/java</directory>
@@ -106,141 +134,18 @@
                                 <include>**</include>
                             </includes>
                         </fileSet>
-                        <fileSet filtered="true" encoding="UTF-8">
-                            <directory>src/test/resources</directory>
-                            <includes>
-                                <include>**</include>
-                            </includes>
-                        </fileSet>
                     </fileSets>
-                </module>
-                <module id="ms-integrations-events" dir="events" name="ms-integrations-events">
-                    <modules>
-                        <module id="ms-integrations-events-test-response" dir="test-response"
-                                name="ms-integrations-events-test-response">
-                            <modules>
-                                <module id="ms-integrations-events-test-response-api" dir="api"
-                                        name="ms-integrations-events-test-response-api">
-                                    <fileSets>
-                                        <fileSet filtered="true" encoding="UTF-8">
-                                            <directory>src/main/java</directory>
-                                            <includes>
-                                                <include>**/*.java</include>
-                                            </includes>
-                                        </fileSet>
-                                    </fileSets>
-                                </module>
-                                <module id="ms-integrations-events-test-response-impl" dir="impl"
-                                        name="ms-integrations-events-test-response-impl">
-                                    <fileSets>
-                                        <fileSet filtered="true" encoding="UTF-8">
-                                            <directory>src/main/java</directory>
-                                            <includes>
-                                                <include>**/*.java</include>
-                                            </includes>
-                                        </fileSet>
-                                        <fileSet filtered="true" encoding="UTF-8">
-                                            <directory>src/test/java</directory>
-                                            <includes>
-                                                <include>**/*.java</include>
-                                            </includes>
-                                        </fileSet>
-                                        <fileSet filtered="true" encoding="UTF-8">
-                                            <directory>src/main/resources</directory>
-                                            <includes>
-                                                <include>**</include>
-                                            </includes>
-                                        </fileSet>
-                                    </fileSets>
-                                </module>
-                            </modules>
-                        </module>
-                        <module id="ms-integrations-events-error" dir="error" name="ms-integrations-events-error">
-                            <modules>
-                                <module id="ms-integrations-events-error-api" dir="api"
-                                        name="ms-integrations-events-error-api">
-                                    <fileSets>
-                                        <fileSet filtered="true" encoding="UTF-8">
-                                            <directory>src/main/java</directory>
-                                            <includes>
-                                                <include>**/*.java</include>
-                                            </includes>
-                                        </fileSet>
-                                    </fileSets>
-                                </module>
-                                <module id="ms-integrations-events-error-impl" dir="impl"
-                                        name="ms-integrations-events-error-impl">
-                                    <fileSets>
-                                        <fileSet filtered="true" encoding="UTF-8">
-                                            <directory>src/main/java</directory>
-                                            <includes>
-                                                <include>**/*.java</include>
-                                            </includes>
-                                        </fileSet>
-                                        <fileSet filtered="true" encoding="UTF-8">
-                                            <directory>src/test/java</directory>
-                                            <includes>
-                                                <include>**/*.java</include>
-                                            </includes>
-                                        </fileSet>
-                                        <fileSet filtered="true" encoding="UTF-8">
-                                            <directory>src/main/resources</directory>
-                                            <includes>
-                                                <include>**</include>
-                                            </includes>
-                                        </fileSet>
-                                    </fileSets>
-                                </module>
-                            </modules>
-                        </module>
-                    </modules>
                 </module>
             </modules>
         </module>
-        <module id="ms-interfaces" dir="interfaces" name="ms-interfaces">
+        <module id="ms-api" dir="api" name="ms-api">
             <modules>
-                <module id="ms-web" dir="web" name="ms-web">
-                    <modules>
-                        <module id="ms-web-api" dir="api" name="ms-web-api">
-                            <fileSets>
-                                <fileSet filtered="true" encoding="UTF-8">
-                                    <directory>src/main/java</directory>
-                                    <includes>
-                                        <include>**/*.java</include>
-                                    </includes>
-                                </fileSet>
-                            </fileSets>
-                        </module>
-                        <module id="ms-web-impl" dir="impl" name="ms-web-impl">
-                            <fileSets>
-                                <fileSet filtered="true" encoding="UTF-8">
-                                    <directory>src/main/java</directory>
-                                    <includes>
-                                        <include>**/*.java</include>
-                                    </includes>
-                                </fileSet>
-                                <fileSet filtered="true" encoding="UTF-8">
-                                    <directory>src/test/java</directory>
-                                    <includes>
-                                        <include>**/*.java</include>
-                                    </includes>
-                                </fileSet>
-                            </fileSets>
-                        </module>
-                    </modules>
-                </module>
-                <module id="ms-listener" dir="listener" name="ms-listener">
+                <module id="ms-rest" dir="rest" name="ms-rest">
                     <fileSets>
                         <fileSet filtered="true" encoding="UTF-8">
                             <directory>src/main/java</directory>
                             <includes>
                                 <include>**/*.java</include>
-                            </includes>
-                        </fileSet>
-                        <fileSet filtered="true" encoding="UTF-8">
-                            <directory>src/main/resources</directory>
-                            <includes>
-                                <include>**</include>
                             </includes>
                         </fileSet>
                         <fileSet filtered="true" encoding="UTF-8">
@@ -251,6 +156,28 @@
                         </fileSet>
                     </fileSets>
                 </module>
+<!--                <module id="ms-listener" dir="listener" name="ms-listener">-->
+<!--                    <fileSets>-->
+<!--                        <fileSet filtered="true" encoding="UTF-8">-->
+<!--                            <directory>src/main/java</directory>-->
+<!--                            <includes>-->
+<!--                                <include>**/*.java</include>-->
+<!--                            </includes>-->
+<!--                        </fileSet>-->
+<!--                        <fileSet filtered="true" encoding="UTF-8">-->
+<!--                            <directory>src/main/resources</directory>-->
+<!--                            <includes>-->
+<!--                                <include>**</include>-->
+<!--                            </includes>-->
+<!--                        </fileSet>-->
+<!--                        <fileSet filtered="true" encoding="UTF-8">-->
+<!--                            <directory>src/test/java</directory>-->
+<!--                            <includes>-->
+<!--                                <include>**/*.java</include>-->
+<!--                            </includes>-->
+<!--                        </fileSet>-->
+<!--                    </fileSets>-->
+<!--                </module>-->
             </modules>
         </module>
     </modules>

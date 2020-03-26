@@ -1,4 +1,4 @@
-package eu.sia.bpd.${msPackageName}.model;
+package it.gov.pagopa.bpd.${msPackageName}.model.entity;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -13,7 +13,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @EqualsAndHashCode(of = {"id"}, callSuper = false)
 @Table(name = "\"DUMMY_ENTITY\"", schema = "\"BPD_TEST\"")
-public class DummyEntity implements Serializable {
+public class DummyEntity implements Serializable {//FIXME: remove me (created as archetype test)
 
 
 }

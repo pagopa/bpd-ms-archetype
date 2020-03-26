@@ -2,24 +2,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>it.gov.pagopa.bpd.${msName}</groupId>
+        <groupId>it.gov.pagopa.bpd.ms.${msName}</groupId>
         <artifactId>${msName}-integration</artifactId>
         <version>${version}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>it.gov.pagopa.bpd.ms.${msName}.integration</groupId>
-    <artifactId>${msName}-integrations-jpa</artifactId>
+    <artifactId>${msName}-integrations-event</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>eu.sia.meda</groupId>
-            <artifactId>meda-arch-jpa</artifactId>
+            <artifactId>meda-arch-event</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <scope>runtime</scope>
+            <groupId>eu.sia.meda</groupId>
+            <artifactId>meda-arch-event</artifactId>
+            <type>test-jar</type>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

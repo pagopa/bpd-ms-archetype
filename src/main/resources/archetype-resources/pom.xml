@@ -3,11 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>eu.sia.bpd</groupId>
+        <groupId>it.gov.pagopa.bpd</groupId>
         <version>1.0-SNAPSHOT</version>
-        <artifactId>bpd-starter-parent</artifactId>
+        <artifactId>bpd-ms-starter-parent</artifactId>
     </parent>
 
+    <groupId>it.gov.pagopa.bpd.ms</groupId>
     <artifactId>${artifactId}</artifactId>
     <version>${version}</version>
     <packaging>pom</packaging>
@@ -20,7 +21,7 @@
     </modules>
 
     <properties>
-        <bpd.${msName}.version>${version}</meda.${msName}.version>
+        <bpd.${msName}.version>${version}</bpd.${msName}.version>
     </properties>
 
     <dependencies>
@@ -33,7 +34,7 @@
 <!--        </dependency>-->
 <!--        TODO: enable only if required-->
 <!--        <dependency>-->
-<!--            <groupId>eu.sia.bpd</groupId>-->
+<!--            <groupId>it.gov.pagopa.bpd</groupId>-->
 <!--            <artifactId>bpd-schema</artifactId>-->
 <!--            <version>1.0-SNAPSHOT</version>-->
 <!--        </dependency>-->

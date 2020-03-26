@@ -1,0 +1,28 @@
+#set( $symbol_dollar = '$' )
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>it.gov.pagopa.bpd.ms.${msName}</groupId>
+        <artifactId>bpd-${msName}</artifactId>
+        <version>${version}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>it.gov.pagopa.bpd.ms.${msName}</groupId>
+    <artifactId>bpd-${msName}-core</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>it.gov.pagopa.bpd.ms.${msName}.integration</groupId>
+            <artifactId>${msName}-integration-jpa</artifactId>
+            <version>${symbol_dollar}{bpd.${msName}.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>it.gov.pagopa.bpd.ms.${msName}.integration</groupId>
+            <artifactId>${msName}-integration-event</artifactId>
+            <version>${symbol_dollar}{bpd.${msName}.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

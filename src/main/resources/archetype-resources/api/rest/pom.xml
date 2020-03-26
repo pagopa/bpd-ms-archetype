@@ -2,20 +2,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>it.gov.pagopa.bpd.ms</groupId>
-        <artifactId>bpd-${msName}</artifactId>
+        <groupId>it.gov.pagopa.bpd.${msName}</groupId>
+        <artifactId>${msName}-api</artifactId>
         <version>${version}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>it.gov.pagopa.bpd.ms.${msName}</groupId>
-    <artifactId>${msName}-integration</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>jpa</module>
-        <module>event</module>
-        <module>rest</module>
-    </modules>
+    <groupId>it.gov.pagopa.bpd.ms.${msName}.api</groupId>
+    <artifactId>${msName}-api-rest</artifactId>
 
 </project>
