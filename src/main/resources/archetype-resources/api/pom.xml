@@ -14,7 +14,7 @@
 
     <modules>
         <module>rest</module>
-        <module>listener</module>
+<!--        <module>listener</module>-->
     </modules>
 
     <dependencies>

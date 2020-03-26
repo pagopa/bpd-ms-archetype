@@ -1,6 +1,6 @@
 package it.gov.pagopa.bpd.${msPackageName}.model.resource;
 
-import it.gov.pagopa.bpd.${msPackageName}.model.enums.TestEnum;
+import it.gov.pagopa.bpd.${msPackageName}.model.enums.DummyEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,5 +16,5 @@ import javax.persistence.Enumerated;
 public class DummyResource extends BaseResource {
     private String message;
     @Enumerated(EnumType.STRING)
-    private TestEnum type;
+    private DummyEnum type;
 }

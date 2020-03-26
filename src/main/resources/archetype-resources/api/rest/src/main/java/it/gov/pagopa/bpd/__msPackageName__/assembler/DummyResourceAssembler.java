@@ -3,7 +3,6 @@
 #set( $symbol_escape = '\' )
 package it.gov.pagopa.bpd.${msPackageName}.assembler;
 
-import it.gov.pagopa.bpd.${msPackageName}.controller.${msNameCamelCase}ControllerImpl;
 import it.gov.pagopa.bpd.${msPackageName}.model.resource.DummyResource;
 import it.gov.pagopa.bpd.${msPackageName}.model.DummyModel;
 import eu.sia.meda.core.assembler.BaseResourceAssemblerSupport;

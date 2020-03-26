@@ -9,7 +9,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>it.gov.pagopa.bpd.ms.${msName}.integration</groupId>
-    <artifactId>${msName}-integrations-event</artifactId>
+    <artifactId>${msName}-integration-event</artifactId>
 
     <dependencies>
         <dependency>

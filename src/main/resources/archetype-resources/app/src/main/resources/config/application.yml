@@ -26,4 +26,4 @@ meda:
 
 logging:
   level:
-    ${groupId}.${msPackageName}: ${symbol_dollar}{LOG_LEVEL_${msNameUpperCase}:DEBUG}
+    it.gov.pagopa.bpd..${msPackageName}: ${symbol_dollar}{LOG_LEVEL_${msNameUpperCase}:DEBUG}

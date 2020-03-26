@@ -1,6 +1,6 @@
 package it.gov.pagopa.bpd.${msPackageName}.model;
 
-import it.gov.pagopa.bpd.${msPackageName}.model.enums.TestEnum;
+import it.gov.pagopa.bpd.${msPackageName}.model.enums.DummyEnum;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,7 +16,7 @@ import javax.validation.constraints.NotNull;
 public class DummyModel implements Serializable {
     private String id;
     @Enumerated(EnumType.STRING)
-    private TestEnum type;
+    private DummyEnum type;
     @NotNull
     private String message;
 }

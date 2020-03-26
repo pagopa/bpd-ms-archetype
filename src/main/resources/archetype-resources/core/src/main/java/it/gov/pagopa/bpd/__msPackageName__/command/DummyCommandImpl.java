@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Scope(BeanDefinition.SCOPE_PROTOTYPE)
 @Slf4j
-public class DummyCommandImpl extends BaseCommand<DummyModel> implements DummyCommand {
+class DummyCommandImpl extends BaseCommand<DummyModel> implements DummyCommand {
 
     private final String message;
 
@@ -24,7 +24,7 @@ public class DummyCommandImpl extends BaseCommand<DummyModel> implements DummyCo
     @Override
     public DummyModel doExecute() {
         log.info(message);
-        return new DummyModel("ID", DummyEnum.TEST, "RESPONSE");
+        return new DummyModel("ID", DummyEnum.DUMMY, "RESPONSE");
     }
 
 }

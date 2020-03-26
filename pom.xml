@@ -11,6 +11,18 @@
     <name>bpd-archetype</name>
     <description>Parent pom providing dependency and plugin management for applications built with Maven</description>
 
+    <developers>
+        <developer>
+            <id>rodovit</id>
+            <name>Rodolfo Viti</name>
+            <email>rodolfo.viti@everis.com</email>
+            <roles>
+                <role>Technical Leader</role>
+            </roles>
+            <timezone>Europe/Rome</timezone>
+        </developer>
+    </developers>
+
     <build>
         <extensions>
             <extension>

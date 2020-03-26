@@ -1,4 +1,4 @@
-package it.gov.pagopa.bpd.${msPackageName}.core.command;
+package it.gov.pagopa.bpd.${msPackageName}.command;
 
 import it.gov.pagopa.bpd.${msPackageName}.model.DummyModel;
 import eu.sia.meda.core.command.Command;

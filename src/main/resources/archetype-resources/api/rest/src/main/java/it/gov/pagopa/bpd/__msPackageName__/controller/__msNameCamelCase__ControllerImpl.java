@@ -25,10 +25,19 @@ class ${msNameCamelCase}ControllerImpl extends StatelessController implements ${
         this.beanFactory = beanFactory;
         this.dummyResourceAssembler = dummyResourceAssembler;
     }
-        
+
     @Override
     public DummyResource test(DummyDTO request) { //FIXME: remove me (created as archetype test)
         log.info(request.toString());
-        return dummyResourceAssembler.toResource(beanFactory.getBean(DummyCommand.class, request.getMessage()).execute());
+
+        DummyResource result = null;
+        try {
+            result = dummyResourceAssembler.toResource(beanFactory.getBean(DummyCommand.class, request.getMessage()).execute());
+        } catch (Exception e) {
+            log.error("Something gone wrong", e);
+        }
+
+        return result;
     }
+
 }

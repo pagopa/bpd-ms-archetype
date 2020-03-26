@@ -11,7 +11,7 @@ import javax.persistence.EntityManager;
 class DummyDAOImpl extends JPAConnectorImpl<DummyEntity, java.io.Serializable> implements DummyDAO {//FIXME: remove me (created as archetype test)
 
     @Autowired
-    public PaymentMethodDAOImpl(EntityManager em) {
+    public DummyDAOImpl(EntityManager em) {
         super(DummyEntity.class, em);
     }
 
