@@ -9,7 +9,7 @@
     </parent>
 
     <groupId>${groupId}</groupId>
-    <artifactId>bpd-${msName}</artifactId>
+    <artifactId>${msName}</artifactId>
     <version>${version}</version>
     <packaging>pom</packaging>
 
