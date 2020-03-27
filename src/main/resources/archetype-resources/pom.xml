@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>it.gov.pagopa.bpd</groupId>
+        <groupId>it.gov.pagopa.bpd.ms</groupId>
         <version>1.0-SNAPSHOT</version>
         <artifactId>bpd-ms-starter-parent</artifactId>
     </parent>
