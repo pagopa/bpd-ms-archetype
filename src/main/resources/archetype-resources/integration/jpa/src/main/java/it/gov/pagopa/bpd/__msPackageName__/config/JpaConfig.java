@@ -7,6 +7,6 @@ import org.springframework.context.annotation.PropertySource;
 
 @ConditionalOnMissingBean(name = "JPADataSource")
 @Configuration
-@PropertySource("classpath:config/${msNameCamelCase}JpaConnectionConfig.properties")
-public class ${msNameCamelCase}JpaConfig extends JPAConnectorConfig {
+@PropertySource("classpath:config/jpaConnectionConfig.properties")
+public class JpaConfig extends JPAConnectorConfig {
 }
