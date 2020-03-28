@@ -11,10 +11,10 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication(exclude = {ErrorMvcAutoConfiguration.class, SessionAutoConfiguration.class})
 @ComponentScan(basePackages = {"eu.sia.meda", "${package}"})
-public class Bpd${msNameCamelCase}Application {
+public class ${msNameCamelCase}Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Bpd${msNameCamelCase}Application.class, args);
+		SpringApplication.run(${msNameCamelCase}Application.class, args);
 	}
 
 }

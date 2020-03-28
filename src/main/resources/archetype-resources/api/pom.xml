@@ -8,7 +8,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>${groupId}.${msName}</groupId>
+    <groupId>${groupId}.${msPackageName}</groupId>
     <artifactId>${artifactId}-api</artifactId>
     <packaging>pom</packaging>
 
@@ -19,7 +19,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>${groupId}.${msName}</groupId>
+            <groupId>${groupId}.${msPackageName}</groupId>
             <artifactId>${artifactId}-core</artifactId>
             <version>${symbol_dollar}{bpd.${msName}.version}</version>
         </dependency>

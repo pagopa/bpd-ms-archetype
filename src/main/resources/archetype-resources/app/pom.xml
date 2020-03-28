@@ -8,18 +8,18 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>${groupId}.${msName}</groupId>
+    <groupId>${groupId}.${msPackageName}</groupId>
     <artifactId>${artifactId}-app</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>${groupId}.${msName}.api</groupId>
+            <groupId>${groupId}.${msPackageName}.api</groupId>
             <artifactId>${artifactId}-api-rest</artifactId>
             <version>${symbol_dollar}{bpd.${msName}.version}</version>
             <scope>runtime</scope>
         </dependency>
 <!--        <dependency>-->
-<!--            <groupId>${groupId}.${msName}.api</groupId>-->
+        <!--            <groupId>${groupId}.${msPackageName}.api</groupId>-->
         <!--            <artifactId>${artifactId}-api-listener</artifactId>-->
 <!--            <version>${symbol_dollar}{bpd.${msName}.version}</version>-->
 <!--            <scope>runtime</scope>-->

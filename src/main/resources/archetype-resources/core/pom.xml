@@ -8,17 +8,17 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>${groupId}.${msName}</groupId>
+    <groupId>${groupId}.${msPackageName}</groupId>
     <artifactId>${artifactId}-core</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>${groupId}.${msName}.integration</groupId>
+            <groupId>${groupId}.${msPackageName}.integration</groupId>
             <artifactId>${artifactId}-integration-jpa</artifactId>
             <version>${symbol_dollar}{bpd.${msName}.version}</version>
         </dependency>
         <dependency>
-            <groupId>${groupId}.${msName}.integration</groupId>
+            <groupId>${groupId}.${msPackageName}.integration</groupId>
             <artifactId>${artifactId}-integration-event</artifactId>
             <version>${symbol_dollar}{bpd.${msName}.version}</version>
         </dependency>
