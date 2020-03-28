@@ -3,23 +3,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>${groupId}</groupId>
-        <artifactId>${msName}</artifactId>
+        <artifactId>${artifactId}</artifactId>
         <version>${version}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>${groupId}.${msName}</groupId>
-    <artifactId>${msName}-core</artifactId>
+    <artifactId>${artifactId}-core</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>${groupId}.${msName}.integration</groupId>
-            <artifactId>${msName}-integration-jpa</artifactId>
+            <artifactId>${artifactId}-integration-jpa</artifactId>
             <version>${symbol_dollar}{bpd.${msName}.version}</version>
         </dependency>
         <dependency>
             <groupId>${groupId}.${msName}.integration</groupId>
-            <artifactId>${msName}-integration-event</artifactId>
+            <artifactId>${artifactId}-integration-event</artifactId>
             <version>${symbol_dollar}{bpd.${msName}.version}</version>
         </dependency>
     </dependencies>
