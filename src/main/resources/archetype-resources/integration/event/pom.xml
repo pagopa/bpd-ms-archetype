@@ -8,8 +8,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>${project.parent.groupId}.integration</groupId>
-    <artifactId>${project.parent.artifactId}-event</artifactId>
+    <groupId>${groupId}.${msName}.integration</groupId>
+    <artifactId>${msName}-integration-event</artifactId>
 
     <dependencies>
         <dependency>

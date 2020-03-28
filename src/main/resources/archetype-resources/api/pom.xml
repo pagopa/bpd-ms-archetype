@@ -8,8 +8,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>${project.parent.groupId}.${msName}</groupId>
-    <artifactId>${project.parent.artifactId}-api</artifactId>
+    <groupId>${groupId}.${msName}</groupId>
+    <artifactId>${msName}-api</artifactId>
     <packaging>pom</packaging>
 
     <modules>
