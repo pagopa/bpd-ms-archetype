@@ -12,7 +12,6 @@
         <dependency>
             <groupId>${groupId}.${msPackageName}.api</groupId>
             <artifactId>${rootArtifactId}-api-rest</artifactId>
-            <version>${symbol_dollar}{bpd.${msName}.version}</version>
             <scope>runtime</scope>
         </dependency>
         <!--        <dependency>-->

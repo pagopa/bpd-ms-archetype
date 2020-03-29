@@ -16,6 +16,31 @@
         <bpd.${msName}.version>${version}</bpd.${msName}.version>
     </properties>
 
+<dependencyManagement>
+<dependencies>
+    <dependency>
+        <groupId>${groupId}.${msPackageName}.integration</groupId>
+        <artifactId>${rootArtifactId}-integration-jpa</artifactId>
+        <version>${version}</version>
+    </dependency>
+    <dependency>
+        <groupId>${groupId}.${msPackageName}.integration</groupId>
+        <artifactId>${rootArtifactId}-integration-event</artifactId>
+        <version>${version}</version>
+    </dependency>
+    <dependency>
+        <groupId>${groupId}.${msPackageName}</groupId>
+        <artifactId>${rootArtifactId}-core</artifactId>
+        <version>${version}</version>
+    </dependency>
+    <dependency>
+        <groupId>${groupId}.${msPackageName}.api</groupId>
+        <artifactId>${rootArtifactId}-api-rest</artifactId>
+        <version>${version}</version>
+    </dependency>
+</dependencies>
+</dependencyManagement>
+
     <dependencies>
 <!--    TODO: use only inside modules that use it-->
 <!--        <dependency>-->

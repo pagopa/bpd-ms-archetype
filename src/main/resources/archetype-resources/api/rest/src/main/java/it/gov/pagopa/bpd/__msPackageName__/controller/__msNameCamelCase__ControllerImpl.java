@@ -15,7 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 @RestController
 @Slf4j
-class ${msNameCamelCase}ControllerImpl extends StatelessController implements Bpd${msNameCamelCase}Controller {
+class ${msNameCamelCase}ControllerImpl extends StatelessController implements ${msNameCamelCase}Controller {
 
     private final BeanFactory beanFactory;
     private final DummyResourceAssembler dummyResourceAssembler;

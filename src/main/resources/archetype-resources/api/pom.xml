@@ -13,7 +13,6 @@
         <dependency>
             <groupId>${groupId}.${msPackageName}</groupId>
             <artifactId>${rootArtifactId}-core</artifactId>
-            <version>${symbol_dollar}{bpd.${msName}.version}</version>
         </dependency>
     </dependencies>
 
