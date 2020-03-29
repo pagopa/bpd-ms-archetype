@@ -8,17 +8,9 @@
         <artifactId>bpd-ms-starter-parent</artifactId>
     </parent>
 
-    <groupId>${groupId}</groupId>
     <artifactId>${artifactId}</artifactId>
     <version>${version}</version>
     <packaging>pom</packaging>
-
-    <modules>
-        <module>app</module>
-        <module>api</module>
-        <module>integration</module>
-        <module>core</module>
-    </modules>
 
     <properties>
         <bpd.${msName}.version>${version}</bpd.${msName}.version>

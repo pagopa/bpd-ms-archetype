@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archetype-descriptor
         xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
-        name="ms-rule-engine"
+        name="${artifactId}"
         xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <requiredProperties>
         <requiredProperty key="msNameCamelCase">
-            <defaultValue>TestService</defaultValue>
+            <!--            <defaultValue>TestService</defaultValue>-->
         </requiredProperty>
         <requiredProperty key="msName">
-            <defaultValue>test-service</defaultValue>
+            <!--            <defaultValue>test-service</defaultValue>-->
         </requiredProperty>
         <requiredProperty key="msNameUpperCase">
-            <defaultValue>TEST_SERVICE</defaultValue>
+            <!--            <defaultValue>TEST_SERVICE</defaultValue>-->
         </requiredProperty>
         <requiredProperty key="msPackageName">
-            <defaultValue>test_service</defaultValue>
+            <!--            <defaultValue>test_service</defaultValue>-->
         </requiredProperty>
+        <!--        <requiredProperty key="rootArtifactId"/>-->
     </requiredProperties>
     <fileSets>
         <fileSet filtered="false" encoding="UTF-8">
@@ -36,7 +37,7 @@
         </fileSet>
     </fileSets>
     <modules>
-        <module id="ms-app" dir="app" name="ms-app">
+        <module id="${rootArtifactId}-app" dir="app" name="${rootArtifactId}-app">
             <fileSets>
                 <fileSet filtered="true" encoding="UTF-8">
                     <directory>src/main/java</directory>
@@ -58,7 +59,7 @@
                 </fileSet>
             </fileSets>
         </module>
-        <module id="ms-core" dir="core" name="ms-core">
+        <module id="${rootArtifactId}-core" dir="core" name="${rootArtifactId}-core">
             <fileSets>
                 <fileSet filtered="true" encoding="UTF-8">
                     <directory>src/main/java</directory>
@@ -74,9 +75,9 @@
                 </fileSet>
             </fileSets>
         </module>
-        <module id="ms-integration" dir="integration" name="ms-integration">
+        <module id="${rootArtifactId}-integration" dir="integration" name="${rootArtifactId}-integration">
             <modules>
-                <module id="ms-integrations-jpa" dir="jpa" name="ms-integrations-jpa">
+                <module id="${rootArtifactId}-integration-jpa" dir="jpa" name="${rootArtifactId}-integration-jpa">
                     <fileSets>
                         <fileSet filtered="true" encoding="UTF-8">
                             <directory>src</directory>
@@ -86,7 +87,7 @@
                         </fileSet>
                     </fileSets>
                 </module>
-<!--                <module id="ms-integrations-rest" dir="rest" name="ms-integrations-rest">-->
+                <!--                <module id="integrations-rest" dir="rest" name="integrations-rest">-->
 <!--                    <fileSets>-->
 <!--                        <fileSet filtered="true" encoding="UTF-8">-->
 <!--                            <directory>src/main/java</directory>-->
@@ -114,7 +115,7 @@
 <!--                        </fileSet>-->
 <!--                    </fileSets>-->
 <!--                </module>-->
-                <module id="ms-integration-event" dir="event" name="ms-integration-event">
+                <module id="${rootArtifactId}-integration-event" dir="event" name="${rootArtifactId}-integration-event">
                     <fileSets>
                         <fileSet filtered="true" encoding="UTF-8">
                             <directory>src/main/java</directory>
@@ -138,9 +139,9 @@
                 </module>
             </modules>
         </module>
-        <module id="ms-api" dir="api" name="ms-api">
+        <module id="${rootArtifactId}-api" dir="api" name="${rootArtifactId}-api">
             <modules>
-                <module id="ms-rest" dir="rest" name="ms-rest">
+                <module id="${rootArtifactId}-api-rest" dir="rest" name="${rootArtifactId}-api-rest">
                     <fileSets>
                         <fileSet filtered="true" encoding="UTF-8">
                             <directory>src/main/java</directory>
@@ -156,7 +157,7 @@
                         </fileSet>
                     </fileSets>
                 </module>
-<!--                <module id="ms-listener" dir="listener" name="ms-listener">-->
+                <!--                <module id="api-listener" dir="listener" name="api-listener">-->
 <!--                    <fileSets>-->
 <!--                        <fileSet filtered="true" encoding="UTF-8">-->
 <!--                            <directory>src/main/java</directory>-->

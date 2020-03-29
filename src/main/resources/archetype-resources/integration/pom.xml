@@ -1,21 +1,12 @@
 #set( $symbol_dollar = '$' )
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <groupId>${groupId}</groupId>
-        <artifactId>${artifactId}</artifactId>
-        <version>${version}</version>
-    </parent>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>${groupId}.${msPackageName}</groupId>
-    <artifactId>${artifactId}-integration</artifactId>
+    <artifactId>${artifactId}</artifactId>
+    <version>${version}</version>
     <packaging>pom</packaging>
-
-    <modules>
-        <module>jpa</module>
-        <module>event</module>
-<!--        <module>rest</module>-->
-    </modules>
 
 </project>

@@ -1,25 +1,22 @@
 #set( $symbol_dollar = '$' )
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <groupId>${groupId}</groupId>
-        <artifactId>${artifactId}</artifactId>
-        <version>${version}</version>
-    </parent>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>${groupId}.${msPackageName}</groupId>
-    <artifactId>${artifactId}-core</artifactId>
+    <artifactId>${artifactId}</artifactId>
+    <version>${version}</version>
 
     <dependencies>
         <dependency>
             <groupId>${groupId}.${msPackageName}.integration</groupId>
-            <artifactId>${artifactId}-integration-jpa</artifactId>
+            <artifactId>${rootArtifactId}-integration-jpa</artifactId>
             <version>${symbol_dollar}{bpd.${msName}.version}</version>
         </dependency>
         <dependency>
             <groupId>${groupId}.${msPackageName}.integration</groupId>
-            <artifactId>${artifactId}-integration-event</artifactId>
+            <artifactId>${rootArtifactId}-integration-event</artifactId>
             <version>${symbol_dollar}{bpd.${msName}.version}</version>
         </dependency>
     </dependencies>
