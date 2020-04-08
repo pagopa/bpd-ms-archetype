@@ -3,26 +3,66 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>it.gov.pagopa.bpd</groupId>
+        <groupId>it.gov.pagopa.bpd.ms</groupId>
         <version>1.0-SNAPSHOT</version>
         <artifactId>bpd-ms-starter-parent</artifactId>
     </parent>
 
-    <groupId>${groupId}</groupId>
-    <artifactId>${msName}</artifactId>
+    <artifactId>${artifactId}</artifactId>
     <version>${version}</version>
     <packaging>pom</packaging>
 
-    <modules>
-        <module>app</module>
-        <module>api</module>
-        <module>integration</module>
-        <module>core</module>
-    </modules>
-
-    <properties>
-        <bpd.${msName}.version>${version}</bpd.${msName}.version>
-    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>${groupId}.${msPackageName}.integration</groupId>
+                <artifactId>${rootArtifactId}-integration-jpa</artifactId>
+                <version>${version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${groupId}.${msPackageName}.integration</groupId>
+                <artifactId>${rootArtifactId}-integration-event</artifactId>
+                <version>${version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${groupId}.${msPackageName}</groupId>
+                <artifactId>${rootArtifactId}-core</artifactId>
+                <version>${version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${groupId}.${msPackageName}.api</groupId>
+                <artifactId>${rootArtifactId}-api-rest</artifactId>
+                <version>${version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.gov.pagopa.bpd.commons.api</groupId>
+                <artifactId>bpd-commons-api-rest</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>it.gov.pagopa.bpd.commons</groupId>
+                <artifactId>bpd-commons-core</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>it.gov.pagopa.bpd.commons.integration</groupId>
+                <artifactId>bpd-commons-integration-jpa</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>it.gov.pagopa.bpd.commons.integration</groupId>
+                <artifactId>bpd-commons-integration-jpa</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>it.gov.pagopa.bpd.commons.api</groupId>
+                <artifactId>bpd-commons-api-rest</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
 <!--    TODO: use only inside modules that use it-->

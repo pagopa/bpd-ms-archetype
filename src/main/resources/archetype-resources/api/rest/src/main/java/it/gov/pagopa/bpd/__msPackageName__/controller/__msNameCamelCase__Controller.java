@@ -15,8 +15,8 @@ import javax.validation.Valid;
 /**
  * Controller to expose MicroService
  */
-@Api(tags = "${msName} Controller")
-@RequestMapping("/${msName}")
+@Api(tags = "Bonus Pagamenti Digitali ${msName} Controller")
+@RequestMapping("/bpd/${msName}")
 public interface ${msNameCamelCase}Controller {
     @PostMapping(value = "/test", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ResponseStatus(HttpStatus.OK)

@@ -1,29 +1,24 @@
-#set( $symbol_dollar = '$' )
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <groupId>${groupId}</groupId>
-        <artifactId>${msName}</artifactId>
-        <version>${version}</version>
-    </parent>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>${project.parent.groupId}.${msName}</groupId>
-    <artifactId>${project.parent.artifactId}-app</artifactId>
+    <groupId>${groupId}.${msPackageName}</groupId>
+    <artifactId>${artifactId}</artifactId>
+    <version>${version}</version>
 
     <dependencies>
         <dependency>
-            <groupId>${groupId}.${msName}.api</groupId>
-            <artifactId>${msName}-api-rest</artifactId>
-            <version>${symbol_dollar}{bpd.${msName}.version}</version>
+            <groupId>${groupId}.${msPackageName}.api</groupId>
+            <artifactId>${rootArtifactId}-api-rest</artifactId>
             <scope>runtime</scope>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>${groupId}.${msName}.api</groupId>-->
-<!--            <artifactId>${msName}-api-listener</artifactId>-->
-<!--            <version>${symbol_dollar}{bpd.${msName}.version}</version>-->
-<!--            <scope>runtime</scope>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>${groupId}.${msPackageName}.api</groupId>-->
+        <!--            <artifactId>${artifactId}-api-listener</artifactId>-->
+        <!--            <version>${symbol_dollar}{bpd.${msName}.version}</version>-->
+        <!--            <scope>runtime</scope>-->
+        <!--        </dependency>-->
     </dependencies>
 
     <build>
