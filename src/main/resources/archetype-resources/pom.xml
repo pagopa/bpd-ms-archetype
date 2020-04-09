@@ -25,6 +25,11 @@
                 <version>${version}</version>
             </dependency>
             <dependency>
+                <groupId>${groupId}.${msPackageName}.integration</groupId>
+                <artifactId>${rootArtifactId}-integration-rest</artifactId>
+                <version>${version}</version>
+            </dependency>
+            <dependency>
                 <groupId>${groupId}.${msPackageName}</groupId>
                 <artifactId>${rootArtifactId}-core</artifactId>
                 <version>${version}</version>

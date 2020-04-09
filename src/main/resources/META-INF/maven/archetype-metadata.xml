@@ -87,34 +87,34 @@
                         </fileSet>
                     </fileSets>
                 </module>
-                <!--                <module id="integrations-rest" dir="rest" name="integrations-rest">-->
-<!--                    <fileSets>-->
-<!--                        <fileSet filtered="true" encoding="UTF-8">-->
-<!--                            <directory>src/main/java</directory>-->
-<!--                            <includes>-->
-<!--                                <include>**/*.java</include>-->
-<!--                            </includes>-->
-<!--                        </fileSet>-->
-<!--                        <fileSet filtered="true" encoding="UTF-8">-->
-<!--                            <directory>src/test/java</directory>-->
-<!--                            <includes>-->
-<!--                                <include>**/*.java</include>-->
-<!--                            </includes>-->
-<!--                        </fileSet>-->
-<!--                        <fileSet filtered="true" encoding="UTF-8">-->
-<!--                            <directory>src/main/resources</directory>-->
-<!--                            <includes>-->
-<!--                                <include>**</include>-->
-<!--                            </includes>-->
-<!--                        </fileSet>-->
-<!--                        <fileSet filtered="true" encoding="UTF-8">-->
-<!--                            <directory>src/test/resources</directory>-->
-<!--                            <includes>-->
-<!--                                <include>**</include>-->
-<!--                            </includes>-->
-<!--                        </fileSet>-->
-<!--                    </fileSets>-->
-<!--                </module>-->
+                <module id="${rootArtifactId}-integration-rest" dir="rest" name="${rootArtifactId}-integration-rest">
+                    <fileSets>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/main/java</directory>
+                            <includes>
+                                <include>**/*.java</include>
+                            </includes>
+                        </fileSet>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/test/java</directory>
+                            <includes>
+                                <include>**/*.java</include>
+                            </includes>
+                        </fileSet>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/main/resources</directory>
+                            <includes>
+                                <include>**</include>
+                            </includes>
+                        </fileSet>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/test/resources</directory>
+                            <includes>
+                                <include>**</include>
+                            </includes>
+                        </fileSet>
+                    </fileSets>
+                </module>
                 <module id="${rootArtifactId}-integration-event" dir="event" name="${rootArtifactId}-integration-event">
                     <fileSets>
                         <fileSet filtered="true" encoding="UTF-8">

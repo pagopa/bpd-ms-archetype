@@ -1,9 +1,13 @@
 @SETLOCAL ENABLEDELAYEDEXPANSION
 
-@SET MNAME=test-service
-@SET MNAME_CAMEL=TestService
-@SET MNAME_UPPER=TEST_SERVICE
-@SET MNAME_PACKAGE=test_service
+:: e.g.: test-service
+@SET MNAME=%1
+:: e.g.: TestService
+@SET MNAME_CAMEL=%2
+:: e.g.: TEST_SERVICE
+@SET MNAME_UPPER=%3
+:: e.g.: test_service
+@SET MNAME_PACKAGE=%4
 
 mvn archetype:generate -B^
 	-DarchetypeGroupId=it.gov.pagopa.bpd.ms^
