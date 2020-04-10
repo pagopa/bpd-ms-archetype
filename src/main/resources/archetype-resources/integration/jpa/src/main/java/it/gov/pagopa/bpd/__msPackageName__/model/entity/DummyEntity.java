@@ -12,7 +12,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(of = {"id"}, callSuper = false)
-@Table(name = "\"DUMMY_ENTITY\"", schema = "\"BPD_TEST\"")
+@Table(name = "dummy_entity")
 public class DummyEntity implements Serializable {//FIXME: remove me (created as archetype test)
 
 
