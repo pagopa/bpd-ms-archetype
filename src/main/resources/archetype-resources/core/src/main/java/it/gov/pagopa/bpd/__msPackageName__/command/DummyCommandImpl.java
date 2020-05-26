@@ -1,7 +1,6 @@
 package ${package}.${msPackageName}.command;
 
-import ${package}.${msPackageName}.model.DummyModel;
-import ${package}.${msPackageName}.model.enums.DummyEnum;
+import ${package}.${msPackageName}.messaging.model.DummyModel;
 
 import eu.sia.meda.core.command.BaseCommand;
 import lombok.extern.slf4j.Slf4j;
@@ -24,7 +23,7 @@ class DummyCommandImpl extends BaseCommand<DummyModel> implements DummyCommand {
     @Override
     public DummyModel doExecute() {
         log.info(message);
-        return new DummyModel("ID", DummyEnum.DUMMY, "RESPONSE");
+        return new DummyModel();
     }
 
 }

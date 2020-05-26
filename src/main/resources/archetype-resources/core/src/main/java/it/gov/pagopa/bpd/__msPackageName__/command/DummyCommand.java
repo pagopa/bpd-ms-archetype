@@ -1,6 +1,6 @@
 package ${package}.${msPackageName}.command;
 
-import ${package}.${msPackageName}.model.DummyModel;
+import ${package}.${msPackageName}.messaging.model.DummyModel;
 import eu.sia.meda.core.command.Command;
 
 //FIXME: remove me (created as archetype test)

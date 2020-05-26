@@ -40,6 +40,22 @@
                 <version>${version}</version>
             </dependency>
             <dependency>
+                <groupId>it.gov.pagopa.bpd.commons.api</groupId>
+                <artifactId>bpd-commons-api-rest</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>it.gov.pagopa.bpd.commons</groupId>
+                <artifactId>bpd-commons-base</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>it.gov.pagopa.bpd.commons</groupId>
+                <artifactId>bpd-commons-base</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <type>test-jar</type>
+            </dependency>
+            <dependency>
                 <groupId>it.gov.pagopa.bpd.commons.integration</groupId>
                 <artifactId>bpd-commons-integration-jpa</artifactId>
                 <version>1.0-SNAPSHOT</version>
@@ -64,12 +80,17 @@
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
-<!--        TODO: enable only if required-->
-<!--        <dependency>-->
-<!--            <groupId>it.gov.pagopa.bpd</groupId>-->
-<!--            <artifactId>bpd-schema</artifactId>-->
-<!--            <version>1.0-SNAPSHOT</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!--        TODO: enable only if required-->
+        <!--        <dependency>-->
+        <!--            <groupId>it.gov.pagopa.bpd</groupId>-->
+        <!--            <artifactId>bpd-schema</artifactId>-->
+        <!--            <version>1.0-SNAPSHOT</version>-->
+        <!--        </dependency>-->
     </dependencies>
 
 </project>
