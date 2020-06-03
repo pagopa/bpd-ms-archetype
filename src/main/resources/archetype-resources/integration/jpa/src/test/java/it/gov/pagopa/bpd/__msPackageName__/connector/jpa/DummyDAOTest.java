@@ -1,8 +1,8 @@
-package ${package}.${msPackageName}.dao;
+package ${package}.${msPackageName}.connector.jpa;
 
 import eu.sia.meda.layers.connector.query.CriteriaQuery;
-import ${package}.${msPackageName}.dao.model.DummyEntity;
-import it.gov.pagopa.bpd.common.BaseCrudJpaDAOTest;
+import ${package}.${msPackageName}.connector.jpa.model.DummyEntity;
+import it.gov.pagopa.bpd.common.connector.jpa.BaseCrudJpaDAOTest;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 

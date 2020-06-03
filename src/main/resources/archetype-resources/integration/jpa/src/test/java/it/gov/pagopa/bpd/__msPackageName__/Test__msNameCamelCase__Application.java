@@ -1,4 +1,4 @@
-package ${package}.${msPackageName}.dao;
+package ${package}.${msPackageName};
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
