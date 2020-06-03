@@ -1,6 +1,6 @@
-package ${package}.${msPackageName}.web.model;
+package ${package}.${msPackageName}.connector.web.dummy.model;
 
-import ${package}.${msPackageName}.web.model.enums.DummyEnum;
+import ${package}.${msPackageName}.connector.web.dummy.model.enums.DummyEnum;
 
 import lombok.Data;
 

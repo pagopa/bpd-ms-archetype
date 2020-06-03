@@ -1,0 +1,19 @@
+//TODO: for more info, see wiremock docs http://wiremock.org/docs/
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/dummy/dummy-method/(\\w*)"
+  },
+  "response": {
+    "status": "200",
+    "jsonBody": {
+      "id": "{{request.path.[2]}}"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}
