@@ -24,7 +24,7 @@ import static org.junit.Assert.assertNotNull;
 
 @TestPropertySource(
         locations = "classpath:config/dummy/rest-client.properties",
-        properties = "spring.application.name=bpd-ms-enrollment-integration-rest")
+        properties = "spring.application.name=${appType}-ms-enrollment-integration-rest")
 @ContextConfiguration(initializers = DummyRestClientTest.RandomPortInitializer.class,
         classes = DummyRestClientConfig.class)
 public class DummyRestClientTest extends BaseFeignRestClientTest {//FIXME: remove me (created as archetype test)

@@ -17,7 +17,7 @@
         <requiredProperty key="msPackageName">
             <!--            <defaultValue>test_service</defaultValue>-->
         </requiredProperty>
-        <!--        <requiredProperty key="rootArtifactId"/>-->
+        <requiredProperty key="appType"/>
     </requiredProperties>
     <fileSets>
         <fileSet filtered="false" encoding="UTF-8">
