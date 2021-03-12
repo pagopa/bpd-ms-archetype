@@ -3,11 +3,11 @@
 #set( $symbol_escape = '\' )
 package ${package}.${msPackageName}.controller;
 
+import eu.sia.meda.core.controller.StatelessController;
 import ${package}.${msPackageName}.model.resource.DummyResource;
 import ${package}.${msPackageName}.model.dto.DummyDTO;
 import ${package}.${msPackageName}.assembler.DummyResourceAssembler;
 import ${package}.${msPackageName}.command.DummyCommand;
-import eu.sia.meda.core.controller.StatelessController;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.web.bind.annotation.RestController;
